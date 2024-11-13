@@ -1,3 +1,4 @@
+// biome-ignore lint/style/useImportType: <explanation>
 import { TodoListProps } from "../App";
 
 function TodoList<T extends { id: number; text: string; done: boolean }>({
@@ -27,6 +28,7 @@ function TodoList<T extends { id: number; text: string; done: boolean }>({
               </span>
             </div>
             <button
+              type="button"
               onClick={() => onRemove(todo.id)}
               className="px-2 py-1 text-red-500 hover:text-red-700"
             >

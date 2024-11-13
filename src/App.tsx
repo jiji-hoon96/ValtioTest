@@ -64,6 +64,7 @@ function App() {
 
       <div className="mt-8 p-4 bg-blue-50 rounded">
         <h3 className="font-bold mb-2">State Updates Log</h3>
+        {/* biome-ignore lint/a11y/useButtonType: <explanation> */}
         <button
           onClick={() => {
             console.log("Zustand State:", useZustandStore.getState());
