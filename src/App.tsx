@@ -1,7 +1,12 @@
 import "./App.css";
+import { EnhancedImmutabilityTest } from "./components/ImmutabilityTest";
 
 function App() {
-  return <div>안녕</div>;
+  return (
+    <div className="App">
+      <EnhancedImmutabilityTest />
+    </div>
+  );
 }
 
 export default App;
